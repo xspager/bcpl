@@ -1,0 +1,11 @@
+# Object files
+*.o
+# Vim temporary files
+*.swp
+
+# Intermediary files generated when the BCPL compiler run
+INTCODE
+OCODE
+
+# Interpreter binary
+icint
