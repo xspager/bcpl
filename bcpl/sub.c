@@ -2,7 +2,10 @@
 
 #ifdef	unix
 #define	MAXFILES	20
+/*
 static	FILE	*filetable[MAXFILES]	= { 0, stdin, stdout, stderr };
+*/
+static	FILE	*filetable[MAXFILES];
 /* slot 0 is wasted so we can use 0 as an invalid value */
 static	int	curinfile	= S_IN;
 static	int	curoutfile	= S_OUT;
@@ -15,6 +18,11 @@ static FP	theerrfile;
 initio()
 {
 #ifdef	unix
+    filetable[0] = 0;
+    filetable[1] = stdin;
+    filetable[2] = stdout;
+    filetable[3] = stderr;
+
 	theinfile = stdin;
 	theoutfile = stdout;
 	theerrfile = stderr;

@@ -9,6 +9,8 @@
 
 #ifdef	unix
 #include	<stdio.h>
+#include    <stdlib.h>
+#include    <string.h>
 typedef	FILE	*FP;
 /* standard stream numbers */
 #define	S_IN		1

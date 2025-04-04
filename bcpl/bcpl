@@ -1,5 +1,6 @@
 #! /bin/sh
-COMPDIR=/proj/hci/src/langs/1/bcpl/local/boot
+#COMPDIR=/proj/hci/src/langs/1/bcpl/local/boot
+COMPDIR=.
 if test $# -lt 1
 then
 	1>&2 echo "Usage: $0 file"

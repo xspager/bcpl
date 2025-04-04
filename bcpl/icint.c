@@ -333,8 +333,9 @@ strbc(i, s)
 
 makemem()
 {
-	char		*malloc();
+	/*char		*malloc();*/
 
+	/*MAXMEM = proghdr.psize + proghdr.gsize + LABMAX + 100;*/
 	MAXMEM = proghdr.psize + proghdr.gsize + LABMAX + 100;
 	if ((mem = (word *)malloc(MAXMEM * sizeof(word))) == NULL)
 	{

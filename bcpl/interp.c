@@ -28,7 +28,7 @@ fetch:
 
 #ifdef	DEBUG
 	fprintf(stderr, "%04x: %04x %05d\n", c - progvec - 1, w, d);
-#endif	DEBUG
+#endif	/*DEBUG*/
 
 	if (w & PBIT)
 		d += p;

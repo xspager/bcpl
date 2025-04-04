@@ -1,4 +1,18 @@
-# A BCPL interpreter for Amiga
+# BCPL compiler in C with my adjusts to run on Linux
+
+Build and run [fact.bpl](./bcpl/fact.bpl) already compiled to INTCODE:
+
+```
+$ cd bcpl
+$ make CFLAGS='-std=c89 -Dunix'
+$ ./icint fact.int
+```
+
+
+
+# Original code
+
+A BCPL interpreter for Amiga
 
 This was was downloaded from: https://aminet.net/dev/lang/BCPL4Amiga.lha
 
