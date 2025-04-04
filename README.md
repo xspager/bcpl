@@ -2,12 +2,16 @@
 
 Build and run [fact.bpl](./bcpl/fact.bpl) already compiled to INTCODE:
 
-```
+```bash
 $ cd bcpl
 $ make CFLAGS='-std=c89 -Dunix'
 $ ./icint fact.int
 ```
 
+To compile a BCPL program:
+```bash
+$ ./bcpl hello.bpl
+```
 
 
 # Original code
